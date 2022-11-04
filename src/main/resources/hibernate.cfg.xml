@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- DB Connection Data -->
+        <property name="connection.username">root</property>
+        <property name="connection.password">1234</property>
+
+        <!-- DB Settings -->
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/hlrsimulator?useSSL=false</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="show_SQL">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <!-- Properties -->
+        <property name="c3p0.min_size">5</property>
+        <property name="c3p0.max_size">20</property>
+        <property name="c3p0.timeout">300</property>
+        <property name="c3p0.max_statements">50</property>
+        <property name="setProperty">3000</property>
+        <property name="hbm2ddl.auto">update</property>
+
+
+    </session-factory>
+</hibernate-configuration>
